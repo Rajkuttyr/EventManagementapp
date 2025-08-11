@@ -13,7 +13,7 @@ async function handleAddEvents(req,res){
     // res.end("Event added successfully");// return 
     const event = new Event({
         EventName: req.body.EventName,
-        EventPoster: req.file.path
+        EventPoster: req.file.path +".jpeg"
 
     })
     
